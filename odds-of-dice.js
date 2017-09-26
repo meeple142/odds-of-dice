@@ -7,6 +7,8 @@ var filename = process.argv[4]
 var max = Math.pow(sidesOfDice, numOfDice);
 var rolls = [];
 var text;
+var i;
+
 console.log("max:", max);
 
 for (i = 0; i < max; ++i) {
