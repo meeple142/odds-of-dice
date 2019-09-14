@@ -18,7 +18,9 @@ function makeDie(faceCount){
     return die;
 }
 
-// this makes a list of every roll possible
+// this makes an array of every roll possible
+// each roll is an array of numbers 
+// example [1,1,1] or [1,4,5] being a roll of 1,1,1 or roll of 1,4,5 
 var rolls = Combinatorics.baseN(makeDie(faceCount), diceCount).toArray();
 
 // prints the number of rolls
