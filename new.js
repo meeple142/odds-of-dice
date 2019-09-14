@@ -10,9 +10,9 @@ var diceCount = +process.argv[3];
 var filename = `numberOfDice${diceCount}sidesOfDice${faceCount}`;
 
 // a function that just makes an array of 1 to faceCount
-function makeDie(faceCount){
+function makeDie(faceCount) {
     var die = [];
-    for(let i = 1; i <= faceCount; ++i){
+    for (let i = 1; i <= faceCount; ++i) {
         die.push(i);
     }
     return die;
@@ -30,12 +30,19 @@ console.log("number of rolls:", rolls.length);
 var keepers = rolls.filter(function (r) {
     // if this function returns true then it keeps the roll
     var keep =
+        // check if the first die is 4
         r[0] === 4 ||
+        // check if the second die is 4
         r[1] === 4 ||
+        // check if the third die is 4
         r[2] === 4 ||
+        // check if the first + second die is 4
         r[0] + r[1] === 4 ||
+        // check if the first + third die is 4
         r[0] + r[2] === 4 ||
+        // check if the second + third die is 4
         r[1] + r[2] === 4 ||
+        // check if the sum of all three dice is 4
         r[0] + r[1] + r[2] === 4;
     return keep;
 });
