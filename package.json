@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/meeple142/odds-of-dice#readme",
   "dependencies": {
-    "js-combinatorics": "^0.5.4"
+    "js-combinatorics": "^0.5.4",
+    "json-stringify-pretty-compact": "^2.0.0"
   }
 }

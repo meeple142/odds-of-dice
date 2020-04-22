@@ -1,0 +1,3 @@
+numberOfDice3sidesOfDice6CheckValue18
+6,6,6
+
